@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <center>
+        <img src="./saylani.png" alt="Saylani Logo">
+        <h1>Saylani Online Academy</h1>
+        <form action="./sumbit.html" method="sumbit">
+            <fieldset style="width: 400px; background-col0or: #f1f1f1;">
+                <h2>Student Registration Form</h2>
+                <pre align="left"><b>Name:</b>
+                <input type="text" name="name" placeholder="Name" required></pre>
+                
+                <pre align="left"><b>Father Name:</b>
+                <input type="text" name="father_name" placeholder="Father Name" required></pre>
+                
+                <pre align="left"><b>Password:</b>
+                <input type="password" name="password" placeholder="Password" minlength="5" maxlength="15" required></pre>
+                
+                <pre align="left"><b>Address:</b>
+                <textarea name="address" cols="20" rows="4" placeholder="Address" required></textarea></pre>
+                
+                <b>Gender:</b>
+                <input type="radio" name="gender" value="male" required>Male 
+                <input type="radio" name="gender" value="female">Female
+                <input type="radio" name="gender" value="other">Other<br><br>
+                
+                <b>Language:</b>
+                <input type="checkbox" name="language" value="urdu">Urdu 
+                <input type="checkbox" name="language" value="english">English
+                <input type="checkbox" name="language" value="other">Other<br><br>
+                
+                <pre align="left"><b>DOB:</b>
+                <input type="date" name="dob" required></pre>
+                
+                <pre align="left"><b>Email Id:</b>
+                <input type="email" name="email" placeholder="Email Id" required></pre>
+                
+                <pre align="left"><b>Mobile Number:</b>
+                <input type="tel" name="mobile" placeholder="Mobile Number" required></pre>
+                
+                <pre align="left"><b>City:</b>
+                <select name="country" required>
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Other">Other</option>
+                </select></pre>
+                
+                <pre align="left"><b>Hobbies:</b>
+                <select name="hobbies" required>
+                    <option value="" disabled selected>Select Hobbies</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Football">Football</option>
+                    <option value="Other">Other</option>
+                </select></pre>
+                
+                <input type="file" name="image" accept="image/*">
+                <button type="button">Upload</button><br><br>
+                
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </center>
+    
+</body>
+</html>
+
